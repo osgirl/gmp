@@ -20,12 +20,12 @@ a. Downloading imagery metadata
 For getting the metadata on the available imagery execute the plugin:
 cd lib
 python ./pluginDhus.py
-and let the program tun till the end.
+and let the program run till the end.
 At any time you can run this command again to get imagery updates from the scihub server
 
 b. Browsing the catalogue
 
-According to your local httpd configuration and the link you set up in the step 2c, you may access the catalogue with any bworser.
+According to your local httpd configuration and the link you set up in the step 2c, you may access the catalogue with any browser.
 For example, if you are using MAMP for OSX you can point your browser to:
 http://localhost:8888/gmp/
 
@@ -47,18 +47,9 @@ The downloaded imagery are stored according to the variable 'repository' set int
 
 Contacts
 --------
+Barbara.borgia@serco.com
 
-If you want to be informed about new code releases, bug fixes, general news and information contact the author via email at gianluca.sabella@gmail.com
-
-If you want to contribute to the project, follow it on https://github.com/gisab/gmp and contact the author.
-
-The project is not founded and based on volunter working.
-If you found it useful and you want to contribute, please follow this link: [donate](
-https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=gianluca%2esabella%40gmail%2ecom&lc=IT&item_name=GMP&item_number=GMPweb&currency_code=EUR&bn=PP%2dDonationsBF%3abtn_donate_SM%2egif%3aNonHosted).
-It will be very much appreciated.
-
--------------------------------------------------------------------------------
-Copyright (C) 2014 Gianluca Sabella 
+------------------------------------------------------------------------------- 
 
 This file is part of the GMP project
 
