@@ -17,6 +17,12 @@ sys.path.append(prjFolder+'/lib')
 
 import dbif
 import datetime
+import config
+
+try:
+    interval = config.ini.get('dbcron', 'interval')
+except:
+    interval = '1 HOUR'
 
 sql=list()
 sql.append(
@@ -24,7 +30,7 @@ sql.append(
 sql.append(
   "update queue set pid=Null where pid is not null and LAST_UPDATE<(now() - INTERVAL 20 MINUTE);")
 sql.append(
-  "update queue set status='NEW' where status='NOK' and pid is null and LAST_UPDATE<(now() - interval 1 hour);")
+  "update queue set status='NEW' where status='NOK' and pid is null and LAST_UPDATE<(now() - interval "+interval+");")
 
 sql.append(
   "delete from files where LAST_UPDATE <(now() - INTERVAL 30 DAY);")
